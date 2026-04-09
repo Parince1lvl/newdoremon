@@ -1,13 +1,12 @@
 
+
+
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>1 LEVEL SHOT PRINCE</title>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PRINCE VIP CHANNEL</title>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -16,379 +15,263 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-
 fbq('init', '3715814555225102');
 fbq('track', 'PageView');
 </script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3715814555225102&ev=PageView&noscript=1"/>
-</noscript>
-
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Noto+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3715814555225102&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
-
 :root{
---accent:#00c896;
---accent2:#00a8ff;
---bg:#050d1a;
---card:#0a1628;
---border:rgba(0,200,150,0.25);
---text:#f0f4ff;
---muted:#7a8fa8;
---gold:#f5c518;
-}
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
+  --panel:#071e1d;
+  --teal1:#0ef2d5;
+  --teal2:#13f2ff;
+  --btn-text:#001818;
+  --muted:rgba(255,255,255,0.75);
+  --label-red:#ff2f5a;
 }
 
 body{
-background:var(--bg);
-font-family:'Noto Sans',sans-serif;
-display:flex;
-align-items:center;
-justify-content:center;
-min-height:100vh;
-padding:16px;
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#061214,#081617,#071013);
+  color:#fff;
+  overflow-x:hidden;
 }
 
-.card{
-width:100%;
-max-width:440px;
-background:linear-gradient(160deg,#0d1f38,#050d1a);
-border:1px solid var(--border);
-border-radius:22px;
-padding:26px 20px;
-box-shadow:0 25px 60px rgba(0,0,0,0.8);
+/* CENTER WRAPPER */
+.center-wrap{
+  display:flex;
+  justify-content:center;
+  padding:40px 0;
 }
 
-.badges{
-display:flex;
-justify-content:center;
-gap:8px;
-margin-bottom:18px;
+/* MAIN CARD */
+.wrap{
+  max-width:400px;
+  width:80%;
+  background:var(--panel);
+  border-radius:20px;
+  padding:22px 20px 30px;
+  text-align:center;
+  position:relative;
+
+  box-shadow:
+    0 0 0 1px rgba(14,242,213,0.35),
+    0 0 20px rgba(14,242,213,0.25),
+    0 0 40px rgba(19,242,255,0.15),
+    0 25px 45px rgba(0,0,0,0.7);
+
+  animation: edgeGlow 3s ease-in-out infinite alternate;
 }
 
-.badge{
-padding:4px 12px;
-border-radius:20px;
-font-size:10px;
-font-weight:800;
+@keyframes edgeGlow{
+  from{
+    box-shadow:
+      0 0 0 1px rgba(14,242,213,0.25),
+      0 0 16px rgba(14,242,213,0.18),
+      0 0 32px rgba(19,242,255,0.1),
+      0 25px 45px rgba(0,0,0,0.7);
+  }
+  to{
+    box-shadow:
+      0 0 0 1px rgba(14,242,213,0.45),
+      0 0 28px rgba(14,242,213,0.35),
+      0 0 55px rgba(19,242,255,0.22),
+      0 25px 45px rgba(0,0,0,0.7);
+  }
 }
 
-.badge-green{
-background:rgba(0,200,150,0.1);
-color:#00c896;
-border:1px solid rgba(0,200,150,0.3);
+.marquee{
+  background:linear-gradient(90deg,var(--teal1),var(--teal2));
+  color:var(--btn-text);
+  font-weight:900;
+  padding:10px 0;
+  border-radius:12px;
+  margin-bottom:12px;
+  font-size:15px;
+  letter-spacing:1px;
 }
 
-.badge-blue{
-background:rgba(0,168,255,0.1);
-color:#00a8ff;
-border:1px solid rgba(0,168,255,0.3);
+.profile-box{
+  width:180px;
+  height:180px;
+  margin:12px auto 18px;
+  border-radius:18px;
+  overflow:hidden;
+  border:4px solid rgba(14,242,213,0.25);
 }
-
-.logos{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:12px;
-margin-bottom:20px;
-}
-
-.logo-box{
-background:rgba(0,200,150,0.08);
-border:1px solid rgba(0,200,150,0.25);
-border-radius:16px;
-padding:12px 18px;
-}
-
-.logo-box img{
-height:60px;
-width:auto;
-display:block;
+.profile-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 h1{
-font-family:'Rajdhani',sans-serif;
-font-size:26px;
-text-align:center;
-margin-bottom:4px;
-color:var(--text);
+  font-size:28px;
+  margin:6px 0;
+  font-weight:800;
 }
-
-.gold{
-color:var(--gold);
-}
-
 .subtitle{
-text-align:center;
-font-size:13px;
-color:var(--muted);
-margin-bottom:20px;
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:18px;
 }
 
-.stats{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:1px;
-background:var(--border);
-border-radius:14px;
-overflow:hidden;
-margin-bottom:18px;
+.pill{
+  display:block;
+  width:100%;
+  padding:18px 0;
+  margin:14px 0;
+  border-radius:50px;
+  background:linear-gradient(90deg,var(--teal1),var(--teal2));
+  color:var(--btn-text);
+  font-weight:900;
+  font-size:18px;
+  text-decoration:none;
+  letter-spacing:1px;
+}
+.pill-sub{
+  font-size:12px;
+  color:var(--muted);
 }
 
-.stat{
-background:#050d1a;
-padding:12px;
-text-align:center;
+.hurry{
+  color:var(--teal1);
+  font-weight:800;
+  margin-top:6px;
 }
 
-.label{
-font-size:10px;
-color:var(--muted);
-margin-bottom:4px;
+.timer{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin:16px 0 20px;
+}
+.cell{
+  background:rgba(1,40,38,0.6);
+  padding:12px 16px;
+  border-radius:10px;
+  width:70px;
+}
+.num{
+  font-size:28px;
+  font-weight:800;
+}
+.lab{
+  font-size:12px;
+  color:var(--label-red);
+  margin-top:4px;
+  font-weight:700;
 }
 
-.value{
-font-family:'Rajdhani',sans-serif;
-font-size:20px;
-font-weight:700;
-color:var(--text);
+.features{margin-bottom:18px;}
+.feature-item{
+  margin:6px 0;
+  font-weight:700;
+  color:var(--muted);
 }
 
-.value.green{
-color:var(--accent);
+.divider{
+  height:1px;
+  background:rgba(255,255,255,0.05);
+  margin:20px auto;
 }
 
-.value.gold{
-color:var(--gold);
+.exp h2{font-size:20px;}
+.big{
+  color:var(--teal1);
+  font-weight:800;
+}
+.mini{
+  font-size:12px;
+  opacity:0.6;
+  letter-spacing:2px;
 }
 
-.features{
-background:rgba(255,255,255,0.02);
-border:1px solid rgba(0,200,150,0.15);
-border-radius:14px;
-padding:14px;
-margin-bottom:18px;
+/* CONTACT SECTION */
+.contact-section{
+  text-align:center;
+  padding:30px 20px;
+  background:#071e1d;
+  max-width:400px;
+  margin:30px auto 50px;
+  border-radius:15px;
+  box-shadow:0 0 15px rgba(14,242,213,0.2);
 }
 
-.feature{
-display:flex;
-gap:8px;
-font-size:13px;
-color:#cbd5e1;
-padding:6px 0;
-}
-
-.cta{
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(135deg,#00e6a8,#00c896);
-color:#021a10;
-text-decoration:none;
-padding:16px;
-border-radius:50px;
-font-size:17px;
-font-family:'Rajdhani',sans-serif;
-font-weight:700;
-margin-top:6px;
-}
-
-.trust{
-display:flex;
-justify-content:center;
-gap:14px;
-margin-top:12px;
-font-size:11px;
-color:var(--muted);
+.contact-btn{
+  background:linear-gradient(90deg,#0ef2d5,#13f2ff);
+  color:#001818;
+  padding:10px 18px;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:800;
+  font-size:14px;
+  display:inline-block;
 }
 
 </style>
 
+<script>
+let m=30,s=0;
+setInterval(()=>{
+  document.getElementById("min").innerText=String(m).padStart(2,'0');
+  document.getElementById("sec").innerText=String(s).padStart(2,'0');
+  if(s===0){ if(m===0)return; m--; s=59; } else s--;
+},1000);
+</script>
 </head>
 
 <body>
 
-<div class="card">
+<div class="center-wrap">
+  <div class="wrap">
 
-<div class="badges">
-<span class="badge badge-green">Verified Channel</span>
-<span class="badge badge-blue">Free to Join</span>
+    <div class="marquee">
+      <marquee scrollamount="4">🔥 FREE VIP SURESHOT • LIMITED TIME • JOIN FAST 🔥</marquee>
+    </div>
+
+    <div class="profile-box">
+      <img src="PRINCE.jpg">
+    </div>
+
+    <h1>𝟭 𝗟𝗘𝗩𝗘𝗟 𝗦𝗛𝗢𝗧 𝐏𝐑𝐈𝐍𝐂𝐄 🌪</h1>
+    <div class="subtitle">JOIN FAST FOR FREE SURESHOT VIP HACKS</div>
+
+    <a class="pill" href="https://t.me/+f5IYkuJ26J5jMDI1">JOIN TELEGRAM NOW</a>
+    <div class="pill-sub">FREE VIP HACKS</div>
+
+    <div class="hurry">HURRY UP! JOIN NOW</div>
+
+    <div class="timer">
+      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
+      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">⭐ 100% WINNING SURESHOT</div>
+      <div class="feature-item">⭐ 100% LOSS RECOVERY</div>
+      <div class="feature-item">⭐ MONTHLY INCOME 30K–50K</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="exp">
+      <h2>5+ YEARS EXPERIENCE</h2>
+      <div class="big">10 LAKH+ WINNING</div>
+      <div class="mini">NUMBER KING</div>
+    </div>
+
+  </div>
 </div>
 
-<div class="logos">
 
-<div class="logo-box">
-<img src="RAJA.png" alt="RAJA Logo">
+  </a>
 </div>
-
-<div style="color:#00c896;">✦</div>
-
-<div class="logo-box">
-<img src="PRINCE.jpg" alt="PRINCE Logo">
-</div>
-
-</div>
-
-<h1>
-Daily <span class="gold">Sureshots</span><br>
-Loss Recovery
-</h1>
-
-<p class="subtitle">
-By PRINCE
-</p>
-
-<a href="https://t.me/+f5IYkuJ26J5jMDI1"
-class="cta"
-id="topCta">
-JOIN TELEGRAM FREE
-</a>
-
-<div class="stats">
-
-<div class="stat">
-<div class="label">Members</div>
-<div class="value green" id="memberCount">
-2,845
-</div>
-</div>
-
-<div class="stat">
-<div class="label">Daily Tips</div>
-<div class="value gold">
-10+
-</div>
-</div>
-
-<div class="stat">
-<div class="label">Since</div>
-<div class="value">
-2023
-</div>
-</div>
-
-</div>
-
-<div class="features">
-
-<div class="feature">
-🎯 Daily Sureshots
-</div>
-
-<div class="feature">
-💰 Loss Recovery Strategy
-</div>
-
-<div class="feature">
-🔐 100% Free
-</div>
-
-<div class="feature">
-🚀 Trusted Channel
-</div>
-
-</div>
-
-<a href="https://t.me/+f5IYkuJ26J5jMDI1"
-class="cta"
-id="mainCta">
-JOIN TELEGRAM FREE
-</a>
-
-<div class="trust">
-
-<div>Secure</div>
-<div>Trusted</div>
-<div>Instant Access</div>
-
-</div>
-
-</div>
-
-<script>
-
-(function(){
-
-var TARGET =
-"https://t.me/+f5IYkuJ26J5jMDI1";
-
-var seconds = 151;
-
-var redirectDone = false;
-
-var timer =
-setInterval(function(){
-
-seconds--;
-
-if(seconds <= 0 && !redirectDone){
-
-redirectDone = true;
-
-clearInterval(timer);
-
-window.location.href = TARGET;
-
-}
-
-},1000);
-
-function handleClick(){
-
-redirectDone = true;
-
-clearInterval(timer);
-
-window.location.href = TARGET;
-
-}
-
-document
-.getElementById("topCta")
-.addEventListener("click",handleClick);
-
-document
-.getElementById("mainCta")
-.addEventListener("click",handleClick);
-
-var count = 2845;
-
-var el =
-document.getElementById(
-"memberCount"
-);
-
-setInterval(function(){
-
-count +=
-Math.random() > 0.4
-? 1
-: -1;
-
-if(count < 2800)
-count = 2800;
-
-el.textContent =
-count.toLocaleString(
-"en-IN"
-);
-
-},3000);
-
-})();
-
-</script>
 
 </body>
 </html>
